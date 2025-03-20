@@ -1,0 +1,1068 @@
+:root {
+  --primary-green: #606e4f;
+  --gold: #e0c28f;
+  --cream: #fffbf5;
+  --red-ish: #814938;
+  --brown: #866c40;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+}
+
+@font-face {
+  font-family: "Things";
+  src:
+    url("fonts/Things.woff") format("woff"),
+    url("fonts/Things.ttf") format("truetype"),
+    url("fonts/Things.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Things";
+  src:
+    url("fonts/Things-Italic.woff") format("woff"),
+    url("fonts/Things-Italic.ttf") format("truetype"),
+    url("fonts/Things-Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--primary-green);
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "Things", sans-serif;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--cream);
+  color: var(--cream);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--cream);
+  color: var(--primary-green);
+}
+
+.btn-dark {
+  background-color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  color: var(--cream);
+}
+
+.btn-dark:hover {
+  background-color: var(--brown);
+  border-color: var(--brown);
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  border: 1px solid var(--gold);
+  color: var(--text-dark);
+}
+
+.btn-gold:hover {
+  background-color: var(--brown);
+  border-color: var(--brown);
+  color: var(--cream);
+}
+
+.hero {
+  background-color: var(--primary-green);
+  color: var(--cream);
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-family: "Things", sans-serif;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  color: var(--gold);
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  max-width: 90%;
+  color: var(--gold);
+  text-align: justify;
+}
+
+.hero-image {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/0.8;
+  background-color: lightgray;
+  clip-path: polygon(
+    13.966% 3.807%,
+    13.966% 3.807%,
+    14.216% 3.251%,
+    14.5% 2.711%,
+    14.815% 2.195%,
+    15.161% 1.716%,
+    15.536% 1.282%,
+    15.938% 0.904%,
+    16.368% 0.593%,
+    16.823% 0.357%,
+    17.303% 0.209%,
+    17.806% 0.157%,
+    82.323% 0.157%,
+    82.323% 0.157%,
+    82.825% 0.209%,
+    83.305% 0.357%,
+    83.76% 0.593%,
+    84.19% 0.904%,
+    84.593% 1.282%,
+    84.967% 1.716%,
+    85.313% 2.195%,
+    85.628% 2.711%,
+    85.912% 3.251%,
+    86.162% 3.807%,
+    86.162% 3.807%,
+    86.717% 4.935%,
+    87.411% 6.001%,
+    88.236% 6.999%,
+    89.182% 7.922%,
+    90.241% 8.763%,
+    91.403% 9.514%,
+    92.66% 10.169%,
+    94.002% 10.72%,
+    95.421% 11.16%,
+    96.907% 11.482%,
+    96.907% 11.482%,
+    97.406% 11.61%,
+    97.88% 11.815%,
+    98.323% 12.091%,
+    98.729% 12.432%,
+    99.09% 12.834%,
+    99.4% 13.289%,
+    99.653% 13.794%,
+    99.841% 14.34%,
+    99.959% 14.924%,
+    100% 15.54%,
+    100% 84.617%,
+    100% 84.617%,
+    99.959% 85.233%,
+    99.841% 85.816%,
+    99.653% 86.363%,
+    99.4% 86.867%,
+    99.09% 87.323%,
+    98.729% 87.725%,
+    98.323% 88.066%,
+    97.88% 88.342%,
+    97.406% 88.547%,
+    96.907% 88.675%,
+    96.907% 88.675%,
+    95.421% 88.997%,
+    94.002% 89.437%,
+    92.66% 89.988%,
+    91.403% 90.642%,
+    90.241% 91.394%,
+    89.182% 92.234%,
+    88.236% 93.158%,
+    87.411% 94.156%,
+    86.717% 95.222%,
+    86.162% 96.35%,
+    86.162% 96.35%,
+    85.912% 96.905%,
+    85.628% 97.446%,
+    85.313% 97.961%,
+    84.967% 98.441%,
+    84.593% 98.875%,
+    84.19% 99.253%,
+    83.76% 99.564%,
+    83.305% 99.8%,
+    82.825% 99.948%,
+    82.323% 100%,
+    17.806% 100%,
+    17.806% 100%,
+    17.303% 99.948%,
+    16.823% 99.8%,
+    16.368% 99.564%,
+    15.938% 99.253%,
+    15.536% 98.875%,
+    15.161% 98.441%,
+    14.815% 97.961%,
+    14.5% 97.446%,
+    14.216% 96.905%,
+    13.966% 96.35%,
+    13.966% 96.35%,
+    13.411% 95.222%,
+    12.717% 94.156%,
+    11.892% 93.158%,
+    10.946% 92.234%,
+    9.887% 91.394%,
+    8.725% 90.642%,
+    7.468% 89.988%,
+    6.126% 89.437%,
+    4.707% 88.997%,
+    3.221% 88.675%,
+    3.221% 88.675%,
+    2.722% 88.547%,
+    2.248% 88.342%,
+    1.805% 88.066%,
+    1.399% 87.725%,
+    1.038% 87.323%,
+    0.728% 86.867%,
+    0.476% 86.363%,
+    0.287% 85.816%,
+    0.169% 85.233%,
+    0.128% 84.617%,
+    0.128% 15.54%,
+    0.128% 15.54%,
+    0.169% 14.924%,
+    0.287% 14.34%,
+    0.476% 13.794%,
+    0.728% 13.29%,
+    1.038% 12.834%,
+    1.399% 12.432%,
+    1.805% 12.091%,
+    2.248% 11.815%,
+    2.722% 11.61%,
+    3.221% 11.482%,
+    3.221% 11.482%,
+    4.707% 11.16%,
+    6.126% 10.72%,
+    7.468% 10.169%,
+    8.725% 9.514%,
+    9.887% 8.763%,
+    10.946% 7.922%,
+    11.892% 6.999%,
+    12.717% 6.001%,
+    13.411% 4.935%,
+    13.966% 3.807%
+  );
+}
+
+.benefits {
+  padding: 4rem 0;
+  background-color: var(--cream);
+  width: 100%;
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  font-weight: normal;
+}
+
+.benefits-title {
+  color: var(--red-ish);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-family: "Things", sans-serif;
+  font-weight: normal;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.about {
+  padding: 4rem 0;
+  background-color: var(--cream);
+  text-align: center;
+  width: 100%;
+}
+
+.about-content {
+  margin: 0 auto;
+  display: flex;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  background-color: lightgray;
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/0.9;
+}
+
+.about-me {
+  width: 50%;
+}
+
+.about-greeting {
+  color: var(--red-ish);
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 2rem;
+  font-family: "Things", sans-serif;
+}
+
+.about-name {
+  font-family: "Things", sans-serif;
+  color: var(--brown);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.about-text {
+  text-align: justify;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.banner {
+  font-family: "Things", sans-serif;
+  background-color: #606c4e;
+  width: 60%;
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -120px;
+  z-index: 99;
+  position: relative;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.stat-item {
+  font-size: 2rem;
+  font-family: "Marcellus", "Things", serif;
+  padding: 0 20px;
+}
+
+.divider {
+  height: 80px;
+  width: 1px;
+  background-color: white;
+  margin: 0 20px;
+}
+
+.cta-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 40px;
+}
+
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio {
+  background-color: var(--primary-green);
+  color: var(--cream);
+  padding: 4rem 0;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.portfolio-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.portfolio-content h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  font-family: "Things", sans-serif;
+}
+
+.portfolio-image {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.portfolio-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  background-color: lightgray;
+}
+
+.blog {
+  padding: 4rem 0;
+  background-color: var(--cream);
+  width: 100%;
+}
+
+.blog h2 {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-family: "Things", sans-serif;
+  color: var(--brown);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.blog-card {
+  overflow: hidden;
+}
+
+.blog-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.blog-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--red-ish);
+}
+
+.blog-excerpt {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.blog-card-btn {
+  border-radius: 0;
+  background-color: var(--cream);
+  color: var(--red-ish);
+  border: 1px solid var(--red-ish);
+}
+
+.blog-card-btn:hover {
+  background-color: var(--red-ish);
+  color: var(--cream);
+}
+
+.blog-image {
+  width: 100%;
+  aspect-ratio: 1/0.7;
+  position: relative;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+
+  background-color: var(--brown);
+  clip-path: polygon(
+    13.966% 3.807%,
+    13.966% 3.807%,
+    14.216% 3.251%,
+    14.5% 2.711%,
+    14.815% 2.195%,
+    15.161% 1.716%,
+    15.536% 1.282%,
+    15.938% 0.904%,
+    16.368% 0.593%,
+    16.823% 0.357%,
+    17.303% 0.209%,
+    17.806% 0.157%,
+    82.323% 0.157%,
+    82.323% 0.157%,
+    82.825% 0.209%,
+    83.305% 0.357%,
+    83.76% 0.593%,
+    84.19% 0.904%,
+    84.593% 1.282%,
+    84.967% 1.716%,
+    85.313% 2.195%,
+    85.628% 2.711%,
+    85.912% 3.251%,
+    86.162% 3.807%,
+    86.162% 3.807%,
+    86.717% 4.935%,
+    87.411% 6.001%,
+    88.236% 6.999%,
+    89.182% 7.922%,
+    90.241% 8.763%,
+    91.403% 9.514%,
+    92.66% 10.169%,
+    94.002% 10.72%,
+    95.421% 11.16%,
+    96.907% 11.482%,
+    96.907% 11.482%,
+    97.406% 11.61%,
+    97.88% 11.815%,
+    98.323% 12.091%,
+    98.729% 12.432%,
+    99.09% 12.834%,
+    99.4% 13.289%,
+    99.653% 13.794%,
+    99.841% 14.34%,
+    99.959% 14.924%,
+    100% 15.54%,
+    100% 84.617%,
+    100% 84.617%,
+    99.959% 85.233%,
+    99.841% 85.816%,
+    99.653% 86.363%,
+    99.4% 86.867%,
+    99.09% 87.323%,
+    98.729% 87.725%,
+    98.323% 88.066%,
+    97.88% 88.342%,
+    97.406% 88.547%,
+    96.907% 88.675%,
+    96.907% 88.675%,
+    95.421% 88.997%,
+    94.002% 89.437%,
+    92.66% 89.988%,
+    91.403% 90.642%,
+    90.241% 91.394%,
+    89.182% 92.234%,
+    88.236% 93.158%,
+    87.411% 94.156%,
+    86.717% 95.222%,
+    86.162% 96.35%,
+    86.162% 96.35%,
+    85.912% 96.905%,
+    85.628% 97.446%,
+    85.313% 97.961%,
+    84.967% 98.441%,
+    84.593% 98.875%,
+    84.19% 99.253%,
+    83.76% 99.564%,
+    83.305% 99.8%,
+    82.825% 99.948%,
+    82.323% 100%,
+    17.806% 100%,
+    17.806% 100%,
+    17.303% 99.948%,
+    16.823% 99.8%,
+    16.368% 99.564%,
+    15.938% 99.253%,
+    15.536% 98.875%,
+    15.161% 98.441%,
+    14.815% 97.961%,
+    14.5% 97.446%,
+    14.216% 96.905%,
+    13.966% 96.35%,
+    13.966% 96.35%,
+    13.411% 95.222%,
+    12.717% 94.156%,
+    11.892% 93.158%,
+    10.946% 92.234%,
+    9.887% 91.394%,
+    8.725% 90.642%,
+    7.468% 89.988%,
+    6.126% 89.437%,
+    4.707% 88.997%,
+    3.221% 88.675%,
+    3.221% 88.675%,
+    2.722% 88.547%,
+    2.248% 88.342%,
+    1.805% 88.066%,
+    1.399% 87.725%,
+    1.038% 87.323%,
+    0.728% 86.867%,
+    0.476% 86.363%,
+    0.287% 85.816%,
+    0.169% 85.233%,
+    0.128% 84.617%,
+    0.128% 15.54%,
+    0.128% 15.54%,
+    0.169% 14.924%,
+    0.287% 14.34%,
+    0.476% 13.794%,
+    0.728% 13.29%,
+    1.038% 12.834%,
+    1.399% 12.432%,
+    1.805% 12.091%,
+    2.248% 11.815%,
+    2.722% 11.61%,
+    3.221% 11.482%,
+    3.221% 11.482%,
+    4.707% 11.16%,
+    6.126% 10.72%,
+    7.468% 10.169%,
+    8.725% 9.514%,
+    9.887% 8.763%,
+    10.946% 7.922%,
+    11.892% 6.999%,
+    12.717% 6.001%,
+    13.411% 4.935%,
+    13.966% 3.807%
+  );
+}
+
+/* For the brown border */
+.blog-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(
+    13.966% 3.807%,
+    13.966% 3.807%,
+    14.216% 3.251%,
+    14.5% 2.711%,
+    14.815% 2.195%,
+    15.161% 1.716%,
+    15.536% 1.282%,
+    15.938% 0.904%,
+    16.368% 0.593%,
+    16.823% 0.357%,
+    17.303% 0.209%,
+    17.806% 0.157%,
+    82.323% 0.157%,
+    82.323% 0.157%,
+    82.825% 0.209%,
+    83.305% 0.357%,
+    83.76% 0.593%,
+    84.19% 0.904%,
+    84.593% 1.282%,
+    84.967% 1.716%,
+    85.313% 2.195%,
+    85.628% 2.711%,
+    85.912% 3.251%,
+    86.162% 3.807%,
+    86.162% 3.807%,
+    86.717% 4.935%,
+    87.411% 6.001%,
+    88.236% 6.999%,
+    89.182% 7.922%,
+    90.241% 8.763%,
+    91.403% 9.514%,
+    92.66% 10.169%,
+    94.002% 10.72%,
+    95.421% 11.16%,
+    96.907% 11.482%,
+    96.907% 11.482%,
+    97.406% 11.61%,
+    97.88% 11.815%,
+    98.323% 12.091%,
+    98.729% 12.432%,
+    99.09% 12.834%,
+    99.4% 13.289%,
+    99.653% 13.794%,
+    99.841% 14.34%,
+    99.959% 14.924%,
+    100% 15.54%,
+    100% 84.617%,
+    100% 84.617%,
+    99.959% 85.233%,
+    99.841% 85.816%,
+    99.653% 86.363%,
+    99.4% 86.867%,
+    99.09% 87.323%,
+    98.729% 87.725%,
+    98.323% 88.066%,
+    97.88% 88.342%,
+    97.406% 88.547%,
+    96.907% 88.675%,
+    96.907% 88.675%,
+    95.421% 88.997%,
+    94.002% 89.437%,
+    92.66% 89.988%,
+    91.403% 90.642%,
+    90.241% 91.394%,
+    89.182% 92.234%,
+    88.236% 93.158%,
+    87.411% 94.156%,
+    86.717% 95.222%,
+    86.162% 96.35%,
+    86.162% 96.35%,
+    85.912% 96.905%,
+    85.628% 97.446%,
+    85.313% 97.961%,
+    84.967% 98.441%,
+    84.593% 98.875%,
+    84.19% 99.253%,
+    83.76% 99.564%,
+    83.305% 99.8%,
+    82.825% 99.948%,
+    82.323% 100%,
+    17.806% 100%,
+    17.806% 100%,
+    17.303% 99.948%,
+    16.823% 99.8%,
+    16.368% 99.564%,
+    15.938% 99.253%,
+    15.536% 98.875%,
+    15.161% 98.441%,
+    14.815% 97.961%,
+    14.5% 97.446%,
+    14.216% 96.905%,
+    13.966% 96.35%,
+    13.966% 96.35%,
+    13.411% 95.222%,
+    12.717% 94.156%,
+    11.892% 93.158%,
+    10.946% 92.234%,
+    9.887% 91.394%,
+    8.725% 90.642%,
+    7.468% 89.988%,
+    6.126% 89.437%,
+    4.707% 88.997%,
+    3.221% 88.675%,
+    3.221% 88.675%,
+    2.722% 88.547%,
+    2.248% 88.342%,
+    1.805% 88.066%,
+    1.399% 87.725%,
+    1.038% 87.323%,
+    0.728% 86.867%,
+    0.476% 86.363%,
+    0.287% 85.816%,
+    0.169% 85.233%,
+    0.128% 84.617%,
+    0.128% 15.54%,
+    0.128% 15.54%,
+    0.169% 14.924%,
+    0.287% 14.34%,
+    0.476% 13.794%,
+    0.728% 13.29%,
+    1.038% 12.834%,
+    1.399% 12.432%,
+    1.805% 12.091%,
+    2.248% 11.815%,
+    2.722% 11.61%,
+    3.221% 11.482%,
+    3.221% 11.482%,
+    4.707% 11.16%,
+    6.126% 10.72%,
+    7.468% 10.169%,
+    8.725% 9.514%,
+    9.887% 8.763%,
+    10.946% 7.922%,
+    11.892% 6.999%,
+    12.717% 6.001%,
+    13.411% 4.935%,
+    13.966% 3.807%
+  );
+}
+
+.newsletter-section {
+  padding: 40px 20px;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+
+.newsletter-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.newsletter-form {
+  background-color: #8b6c3d;
+  border-radius: 30px;
+  padding: 40px 20px;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newsletter-form:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50px;
+  right: 50px;
+  height: 60px;
+  background-color: #8b6c3d;
+  border-radius: 30px 30px 0 0;
+}
+
+.newsletter-form:after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50px;
+  right: 50px;
+  height: 60px;
+  background-color: #8b6c3d;
+  border-radius: 0 0 30px 30px;
+}
+
+.newsletter-title {
+  font-family: "Things", serif;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.newsletter-subtitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.newsletter-inputs {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-input {
+  padding: 15px;
+  font-size: 1rem;
+  outline: none;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-input-email {
+  background-color: rgba(139, 108, 61, 0.7);
+  border-radius: 5px 0 0 5px;
+  width: 40%;
+}
+
+.newsletter-input-name {
+  background-color: rgba(139, 108, 61, 0.9);
+  border-left: none;
+  border-right: none;
+  width: 40%;
+}
+
+.newsletter-button {
+  padding: 15px;
+  font-size: 1rem;
+  height: 50px;
+  background-color: #ffffff;
+  color: #8b6c3d;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  width: 20%;
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #f5f5f5;
+}
+
+footer {
+  background-color: var(--primary-green);
+  padding: 3rem 0;
+  color: var(--cream);
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-info h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-social h4 {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--cream);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero-inner,
+  .benefits-grid,
+  .portfolio-inner,
+  .blog-grid,
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .newsletter-inputs {
+    flex-direction: column;
+  }
+
+  .newsletter-input-email,
+  .newsletter-input-name,
+  .newsletter-button {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .newsletter-input-email {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .newsletter-button {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .newsletter-title {
+    font-size: 2rem;
+  }
+
+  .newsletter-subtitle {
+    font-size: 1rem;
+  }
+  .stats {
+    flex-direction: column;
+  }
+
+  .divider {
+    height: 1px;
+    width: 80px;
+    margin: 20px 0;
+  }
+
+  .cta-button {
+    margin: 20px 0 0 0;
+  }
+}
